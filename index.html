@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>நம்ம கடை</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="container">
+    <div class="shopName">
+    <h1>நம்ம <span> kadai!</span></h1>
+    <img src="groceries.png" width="50px" height="50px" alt="">
+    </div>
+    <form id="productForm">
+    <h1>பொருளை சேர்க்க:</h1>
+        <input type="text" id="productName" placeholder="பொருள் பெயர்" required>
+        <input type="number" id="productPrice" placeholder="விலை" required>
+        <input type="text" id="productLocation" placeholder="பொருள் இருக்கும் இடம்" required>
+        <button type="submit">சேர்க்க</button>
+    </form>
+    <div class="endA"></div>
+    <div class="searchSection">
+    <div class="searchDiv">
+    <input type="text" id="searchInput" placeholder="பொருளை தேடு">
+    <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+    </div>
+    <h1>பொருள் பட்டியல்:</h1>
+    <div id="productList">
+    </div>
+</div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
